@@ -32,10 +32,18 @@ pip install -r requirements.txt
 python ./scripts/01_prepare_data.py
 ```
 
+Результат виконання:
+
+![Result](./img/01_prepare.png)
+
 Запустіть скрипт для перетворення текстових даних у векторні представлення
 ```bash
 python ./scripts/02_embed.py
 ```
+
+Результат виконання:
+
+![Result](./img/02_embed.png)
 
 ## Відповіді на запитання:
 ### 1.1 Чим Pinecone відрізняється від Qdrant і Chroma за моделлю розгортання, ліцензією і продуктивністю? У якому сценарії ви б обрали кожен із них?
@@ -81,12 +89,22 @@ $$cos(\theta) = \frac{A \cdot B}{\|A\| \|B\|} = \frac{A \cdot B}{1 \cdot 1} = A 
 python ./scripts/03_load_to_pinecone.py
 ```
 
+Результат виконання:
+
+![Result](./img/03_load.png)
+
 # Частина 3 — Пошукові запити
 
 Запустіть скприпт для виконання пошукових запитів та отримання релевантних статей:
 ```bash
 pyton ./scripts/04_search.py
 ```
+
+Результат виконання:
+
+![ResultPart1](./img/04_search_part1.png)
+
+![ResultPart2](./img/04_search_part2.png)
 
 ## Відповіді на запитання:
 
@@ -132,6 +150,10 @@ $$d_{L2}^2 = 2 - 2 \cdot \text{cosine\\_sim}(\mathbf{A}, \mathbf{B})$$
 python ./scripts/05_chunking.py
 ```
 
+Результат виконання:
+
+![Result](./img/05_chunking.png)
+
 ## Відповіді на запитання:
 
 ### 4.1 Яка стратегія дає більш осмислені чанки?
@@ -163,6 +185,10 @@ python ./scripts/05_chunking.py
 ```bash
 python ./scripts/06_hybrid_search.py
 ```
+
+Результат виконання:
+
+![Result](./img/06_hybrid_search.png)
 
 ### Таблиця порівняння методів пошуку
 
